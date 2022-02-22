@@ -1,3 +1,4 @@
+# 이진 탐색
 def binary_search(array,target,start,end):
     if start > end:
         return False
@@ -23,3 +24,16 @@ for i in range(len(array2)):
         print("Yes ")
     else:
         print("No ")
+
+
+##### Easy Implementation using Set 집합을 이용해 빨리 풀기
+
+newset = set()
+for i in range(len(array)):
+    newset.add(array[i])
+
+for i in array2:
+    if i in array:
+        print("yes")
+    else:
+        print("no")
