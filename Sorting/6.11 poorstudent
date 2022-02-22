@@ -1,0 +1,12 @@
+n = int(input())
+
+list = []
+for i in range(n):
+    a,b = input().split()
+    list.append((a,b))
+
+list.sort(key= lambda student: student[1]) # 매개변수 lambda-> 'lambda 매개변수: 표현식
+
+for student in list:
+    print(student[0], end=' ')
+
